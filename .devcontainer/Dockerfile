@@ -4,7 +4,7 @@ USER root
 ARG USERNAME=proof
 
 RUN apt-get update \
-    && apt-get install -y sudo xz-utils \
+    && apt-get install -y sudo xz-utils wget git\
     && apt-get clean\
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME

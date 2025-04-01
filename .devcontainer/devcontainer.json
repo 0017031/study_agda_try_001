@@ -3,7 +3,7 @@
     "dockerfile": "./Dockerfile",
     "context": "."
   },
-  // "remoteUser": "ubuntu",
+  "remoteUser": "proof",
   // "postCreateCommand": "dotnet tool install fantomas -g",
   "features": {
     "ghcr.io/devcontainers/features/sshd:1": {
@@ -23,7 +23,7 @@
       },
       "extensions": [
         "banacorn.agda-mode",
-        "ericniebler.erics-build-output-colorizer",
+        "ericniebler.erics-build-output-colorizer"
       ]
     }
   }
