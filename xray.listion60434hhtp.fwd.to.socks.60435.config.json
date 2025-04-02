@@ -1,0 +1,34 @@
+{
+  "inbounds": [
+    {
+      "port": 60434,
+      "protocol": "http",
+      "settings": {
+        "allowTransparent": true,
+        "allowInsecure": true
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "socks",
+      "settings": {
+        "allowTransparent": true,
+        "allowInsecure": true,
+        "servers": [
+          {
+            "address": "localhost",
+            "port": 60435
+          }
+        ]
+      }
+    }
+  ]
+}

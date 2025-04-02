@@ -1,0 +1,6 @@
+echo standard-library > ~/.agda/defaults
+echo /home/proof/agda-stdlib-2.1/standard-library.agda-lib > ~/.agda/libraries
+
+
+xray.exe run -c xray.listion60434hhtp.fwd.to.socks.60435.config.json
+-D 60435 -f -C -q -N
